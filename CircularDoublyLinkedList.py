@@ -1,6 +1,3 @@
-#   Created by Elshad Karimov on 12/05/2020.
-#   Copyright © 2020 AppMillers. All rights reserved.
-
 class Node:
     def __init__(self, value=None):
         self.value = value
@@ -21,7 +18,7 @@ class CircularDoublyLinkedList:
             if node == self.tail.next:
                 break
     
-    #  Creation of Circular Doubly Linked List
+    #  Creation of Circular Doubly LinkedList
     def createCDLL(self, nodeValue):
         newNode = Node(nodeValue)
         self.head = newNode
@@ -31,7 +28,7 @@ class CircularDoublyLinkedList:
         return "The CDLL is created successfully"
 
 
-    # Insertion Method in Circular Doubly Linked List
+    # Insertion Method in Circular Doubly LinkedList
     def insertCDLL(self, value, location):
         if self.head is None:
             return "The CDLL does not exist"
@@ -61,7 +58,7 @@ class CircularDoublyLinkedList:
                 tempNode.next = newNode
             return "The node has been successfully inserted"
 
-    # Traversal of Circular Doubly Linked List
+    # Traversal of Circular Doubly LinkedList
     def traversalCDLL(self):
         if self.head is None:
             print("There is not any node for traversal")
@@ -73,7 +70,7 @@ class CircularDoublyLinkedList:
                     break
                 tempNode = tempNode.next
 
-    # Reverse traversal of Circular Doubly Linked List
+    # Reverse traversal of Circular Doubly LinkedList
     def reverseTraversalCDLL(self):
         if self.head is None:
             print("There is not any node for reverse traversal")
@@ -98,7 +95,7 @@ class CircularDoublyLinkedList:
                     return "The value does not exist in CDLL"
                 tempNode = tempNode.next
     
-    # Delete a node from Circular Doubly Linked List
+    # Delete a node from Circular Doubly LinkedList
     def deleteNode(self, location):
         if self.head is None:
             print("There is not any node to delete")
@@ -133,7 +130,7 @@ class CircularDoublyLinkedList:
                 curNode.next.prev = curNode
             print("The node has been successfully deleted")
     
-    # Delete entire Circular Doubly Linked List
+    # Delete entire Circular Doubly LinkedList
     def deleteCDLL(self):
         if self.head is None:
             print("There is not any element to delete")
