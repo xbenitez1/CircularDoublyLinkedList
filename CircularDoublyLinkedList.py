@@ -149,14 +149,7 @@ class CircularDoublyLinkedList:
     
 
 
-circularDLL = CircularDoublyLinkedList()
-circularDLL.createCDLL(5)
-circularDLL.insertCDLL(0,0)
-circularDLL.insertCDLL(1,1)
-circularDLL.insertCDLL(2,2)
-print([node.value for node in circularDLL])
-circularDLL.deleteCDLL()
-print([node.value for node in circularDLL])
+
 
 
 
